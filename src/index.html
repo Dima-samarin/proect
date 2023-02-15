@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include('assets/templates/html/meta.html', {
+  'title': 'Главная'
+  })
+</head>
+
+<body class="home__page">
+    @@include('assets/templates/html/header.html')
+    @@include('assets/templates/html/intro.html')
+    <main class="main">
+      @@include('assets/templates/html/services.html')
+      @@include('assets/templates/html/guarantees.html')
+      @@include('assets/templates/html/tarifs.html')
+      @@include('assets/templates/html/team.html')
+      @@include('assets/templates/html/reviews.html')
+      @@include('assets/templates/html/contacts.html')
+    </main>
+    @@include('assets/templates/html/footer.html')
+    @@include('assets/templates/html/modal.html')
+  <script src="assets/templates/js/scripts.min.js"></script>
+</body>
+
+</html>

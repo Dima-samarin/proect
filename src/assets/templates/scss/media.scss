@@ -1,0 +1,161 @@
+@media (max-width: 992px) {
+	.header{
+		min-height: 50px;
+	}
+	.nav {
+		--header-height: 71px;
+		padding-top: 70px;
+		position: fixed;
+		top: var(--header-height);
+		left: 0;
+		width: 100%;
+		height: calc(100vh - var(--header-height));
+		background-color: #0d6efd;
+		z-index: 1000;
+		transform: translateX(100%);
+		transition: transform 0.6s ease-in-out;
+		overflow-x: auto;
+	}
+
+	.nav--visible {
+		transform: none;
+	}
+
+	.nav__list {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.nav__item {
+		margin-bottom: 60px;
+	}
+
+	.nav__item:not(:last-child) {
+		margin-right: 0;
+	}
+
+	.nav__link {
+		font-size: 25px;
+		color: $white;
+	}
+	.nav__link:focus {
+		color: $white !important;
+	}
+	.burger {
+		display: block;
+	}
+
+	.header-top {
+		display: none;
+	}
+
+	.intro__item {
+		min-height: auto;
+		padding: 20px 0;
+	}
+
+	.section-services {
+		&__item {
+			max-width: 50%;
+		}
+	}
+
+	.section-guarantees {
+		&__item {
+			max-width: 100%;
+			text-align: center;
+		}
+	}
+
+	.section-tarifs {
+		&__item {
+			max-width: 49%;
+		}
+	}
+
+	.section-team {
+		&__item {
+			max-width: 49%;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.intro {
+		&__title {
+			font-size: 22px;
+		}
+	}
+
+	.section-services {
+		&__item {
+			max-width: 100%;
+		}
+	}
+
+	.section-guarantees {
+		&__title {
+			font-size: 25px;
+		}
+	}
+
+	.section-tarifs {
+		&__item {
+			max-width: 100%;
+		}
+	}
+
+	.section-team {
+		&__item {
+			max-width: 100%;
+		}
+	}
+
+	.section-contacts {
+		&__col {
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 567px) {
+	.intro {
+		&__title {
+			font-size: 17px;
+		}
+	}
+	.section-tarifs {
+		&__price {
+			padding-bottom: 10px;
+		}
+	}
+	.footer-top {
+		&__inner {
+			flex-direction: column;
+			align-items: center;
+			row-gap: 40px;
+		}
+	}
+
+	.footer {
+		&__btn {
+			min-width: 100%;
+			width: 220px;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.modal-order {
+		&__title {
+			font-size: 25px;
+		}
+	}
+}
+@media (max-width: 320px) {
+	.modal-order {
+		&__title {
+			font-size: 16px;
+		}
+	}
+}

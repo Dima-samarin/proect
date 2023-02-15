@@ -1,0 +1,23 @@
+.section-guarantees {
+  padding: 10px 0 10px;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 100%;
+    max-width: 50%;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 1.5;
+    row-gap: 20px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &__descr {
+    line-height: 1.8;
+    font-size: 17px;
+  }
+}

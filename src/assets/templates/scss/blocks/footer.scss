@@ -1,0 +1,50 @@
+.footer {
+  background-color: #000066;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  &-social {
+    &__icons {
+      width: 28px;
+      height: 28px;
+    }
+
+  }
+  &-icons {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+  }
+  &-top {
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 20px;
+    }
+    &__title {
+      color: $white;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    &__contacts {
+      display: flex;
+    }
+    &__rabota {
+      max-width: 200px;
+    }
+  }
+  &__btn {
+   min-width: 300px;
+   font-size: 15px;
+  }
+ 
+}
+.footer-top__social-list {
+  display: flex;
+  column-gap: 25px;
+}
+.footer-social__icons {
+  width: 33px;
+  height: 33px;
+}
